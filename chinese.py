@@ -15,7 +15,7 @@ def egcd(a, b):
 		b = c
 	resultado = (b, x[1], y[1])
 	return resultado
-
+ 
 def chinese():
 	a = [4, 5, 6, 7, 8, 9]
 	m = [2, 3, 5, 7, 11, 13]
@@ -28,7 +28,6 @@ def chinese():
 		exgcd = egcd(temporal, n / temporal)
 		e = exgcd[1] * (n / temporal)
 		x += e * a[i]
-	x = x + n
+	while x <= 0:
+		x = x + n
 	print x
-	
-chinese()
