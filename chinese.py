@@ -28,6 +28,7 @@ def chinese():
 		exgcd = egcd(temporal, n / temporal)
 		e = exgcd[1] * (n / temporal)
 		x += e * a[i]
+	x = x + n
 	print x
 	
 chinese()
